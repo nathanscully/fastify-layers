@@ -1,0 +1,31 @@
+{
+  "name": "fastify-layers",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx watch src/index.ts",
+    "start": "node dist/index.js",
+    "lint": "biome check . && tsc --noEmit",
+    "lint:fix": "biome check . --write"
+  },
+  "packageManager": "pnpm@10.11.0",
+  "devDependencies": {
+    "@biomejs/biome": "^1.9.4",
+    "@types/node": "^22.15.21",
+    "@types/pg": "^8.15.2",
+    "tsx": "^4.19.2",
+    "typescript": "^5.8.2"
+  },
+  "dependencies": {
+    "@fastify/env": "^5.0.2",
+    "@opentelemetry/api": "^1.9.0",
+    "fastify": "^5.2.0",
+    "fastify-plugin": "^5.0.1",
+    "i": "^0.3.7",
+    "ioredis": "^5.4.2",
+    "pg": "^8.13.3",
+    "pino": "^9.7.0"
+  }
+}
